@@ -1,0 +1,128 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: .2rem;
+}
+
+.content h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon {
+    background-color: #2cc295;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 35vw;
+    color: #fff;
+    height: 13vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pokemon .info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: .8rem;
+}
+
+.info .number {
+    opacity: .7;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pokemon .detail .types {
+    list-style: none;
+    text-align: start;
+    margin: 0;
+    padding: 0;
+}
+
+.pokemon .detail .types .type {
+    margin: .2rem;
+    padding: .2rem;
+    border-radius: .35rem;
+    background-color: rgb(93, 214, 168);
+    font-size: .75rem;
+
+}
+
+.detail img {
+    max-width: 100%;
+    width: 50%;
+}
+
+@media (min-width: 768px) {
+    .pokemons {
+        gap: 1.3rem;
+    }
+
+    .pokemon {
+        width: 40vw;
+        height: 20vh;
+    }
+
+    .pokemon .info {
+        
+        font-size: 1.5rem;
+    }
+
+    .pokemon .detail {
+        max-width: 100%;
+    }
+
+    .pokemon .detail .types .type {
+        font-size: 1.3rem;
+        margin: .7rem;
+        padding: .4rem;
+    }
+
+    .pokemon .detail img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .pokemons {
+        gap: 1.5rem;
+    }
+
+    .pokemon {
+        height: 30vh;
+        padding: 2.5rem
+    }
+
+    .pokemon .info {
+        padding-top: 1.5rem
+    }
+    .pokemon .info .name {
+        font-size: 2rem;
+    }
+
+    .pokemon .detail img {
+        width: 40%;
+    }
+}
